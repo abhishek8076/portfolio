@@ -126,5 +126,9 @@ export const info = {
             source: "https://github.com/paytonjewell",
             // image: mock5
         }
-    ]
+    ],
+   
+}
+export const education={
+   name:"sdfsadf"
 }
