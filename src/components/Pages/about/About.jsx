@@ -11,11 +11,14 @@ import {
 
 }
   from "@mui/material";
+  import me from "./../../../assets/img/skill.jpg";
 // import { Container } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import { styled } from '@mui/material/styles';
 import './about.css'
 import { education } from "../../../info/Info";
+import { Skill } from "../../../assets/skill/skill";
+import { Service } from "../../../assets/services/services";
 export const About = () => {
   // const Img = styled('img')({
   //   margin: 'auto',
@@ -24,10 +27,15 @@ export const About = () => {
   //   maxHeight: '100%',
   // });
   return (
-
-    <div style={{ backgroundColor: "#ccffff" }}>
-      {/* <h1 style={{textAlign:"center"}}>About</h1> */}
-      <Container >
+      <>
+    <div style={{ backgroundColor: "#ccffff",height:"100%", paddingTop: "100px",
+    paddingBottom: "50px",
+    justifyContent: "center",
+    }}>
+      <div style={{height:"100%", paddingTop: "100px",
+    paddingBottom: "50px",
+    justifyContent: "center"}}>
+      <Container  >
 
         <Card  >
           <div id="fh5co-resume" className="fh5co-bg-color">
@@ -107,39 +115,48 @@ export const About = () => {
           </div>
         </Card>
       </Container>
+      </div>
       {/* =================services section=========================== */}
-      {/* <div className="container" style={{ width: "18rem;" }}> */}
-        <div class="card" style={{ width: "150px", marginLeft:"15px" }} >
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style={{ width: "150px", marginLeft:"15px" }} >
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style={{ width: "150px", marginLeft:"15px" , display:"flex" }} >
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      {/* </div> */}
-
-
-
-
+      
       {console.log("everything is okk")};
-    </div>
-
+     <div style={{height:"100%", paddingTop: "20px",
+    paddingBottom: "50px",
+    justifyContent: "center"}}>
+     
+    <Container style={{ display:"flex"
+    }}>
+        <Card style={{height:"100%",  width:"100%",paddingTop: "50px",
+    paddingBottom: "50px",
+    justifyContent: "center",
+    alignItem:"center" ,
+    display:"flex"}}>
+        <Skill/>
+        </Card>
+        <Card style={{height:"80%",  width:"100%",paddingTop: "50px",
+    paddingBottom: "50px",
+    justifyContent: "center",
+    alignItem:"center" ,
+    display:"flex"}}>
+          <img src={me} style={{ height:'500px',display:"flex", flex:'100%',
+  flexWrap: 'wrap',
+  padding:' 0 4px'}} />
+        </Card>
+        </Container>
+        <Container style={{height:"80%",  width:"100%",paddingTop: "80px",
+    paddingBottom: "50px",
+    justifyContent: "center",
+    alignItem:"center" ,
+    display:"flex"}}>
+          <Card style={{height:"80%",  width:"100%",paddingTop: "80px",
+    paddingBottom: "50px",
+    justifyContent: "center",
+    alignItem:"center" ,
+    display:"flex"}}>
+            <Service/>
+          </Card>
+        </Container>
+        </div>
+        </div>
+    </>
   );
 };
