@@ -35,7 +35,7 @@ export const About = () => {
       <div style={{height:"100%", paddingTop: "100px",
     paddingBottom: "50px",
     justifyContent: "center"}}>
-      <Container  >
+      <Container >
 
         <Card  >
           <div id="fh5co-resume" className="fh5co-bg-color">
