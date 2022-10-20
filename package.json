@@ -55,5 +55,8 @@
   "main": "index.js",
   "repository": "https://github.com/abhishek8076/portfolio.git",
   "author": "jhaabhishek8076 <jhaabhishek8076@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
