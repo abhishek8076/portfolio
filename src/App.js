@@ -24,8 +24,9 @@ function App() {
             <Route path="/contact" component={Contact} />
             <Route path="/resume" component={ResumeNew} />
             {/* <Route path="/Project" component={ResumeNew} /> */}
-            {/* <Redirect to="/"/> */}
+            
             <Route path="*" component={PageNotFound} />
+            <Redirect to="/"/>
           </Switch>
         </div>
       <BtnTop/>
