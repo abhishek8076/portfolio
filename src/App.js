@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Router>
-        {/* <NavBar /> */}
+        <NavBar />
         <div className="pages">
           <Switch>
             <Route exact path="/" component={Home} />
