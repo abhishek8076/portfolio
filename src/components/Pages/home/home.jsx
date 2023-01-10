@@ -6,6 +6,7 @@ import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
 import {Box, Grid} from "@mui/material";
 import {info} from "../../../info/Info";
+import DarkMode from '../../darkMode/darkmode';
 
 export default function Home() {
     
@@ -13,6 +14,7 @@ export default function Home() {
       <>
       <Box backgroundColor={'#ccffff'} component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'row'}} alignItems={'center'}
            justifyContent={'center'} minHeight={'calc(100vh - 175px)'}>
+            {/* <DarkMode/> */}
          <Box className={classNames(Style.avatar, Style.shadowed)} alt={'image of developer'} style={{background: info.gradient}} component={'img'} src={me} width={{xs: '35vh', md: '40vh'}}
               height={{xs: '35vh', md: '40vh'}}
               borderRadius={'50%'} p={'0.75rem'} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}}/>

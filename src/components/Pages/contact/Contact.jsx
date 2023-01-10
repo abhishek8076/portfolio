@@ -16,14 +16,14 @@ export const Contact = () => {
 	const [values, setValues] = useState({
 		name: '',
 		email: '',
-		subject:'',
+		subject: '',
 		message: ''
 	});
 	const [validation, setValidation] = React.useState([]);
 	const handleChange =
-    (prop) => (event) => {
-      setValues({ ...values, [prop]: event.target.value });
-    };
+		(prop) => (event) => {
+			setValues({ ...values, [prop]: event.target.value });
+		};
 	return (
 		<>
 			<div style={{
@@ -46,19 +46,19 @@ export const Contact = () => {
 									<div className="col-md-5">
 										<div className="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
 											<div className="colorlib-icon">
-												<i className="icon-globe-outline"></i>
+												<i className="fa fa-envelope"></i>
 											</div>
 											<div className="colorlib-text">
-												<p><a href="#">info@domain.com</a></p>
+												<p><a href="#">jhaabhishek8076@gmail.com</a></p>
 											</div>
 										</div>
 
 										<div className="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
 											<div className="colorlib-icon">
-												<i className="icon-map"></i>
+												<i className="fa fa-map"></i>
 											</div>
 											<div className="colorlib-text">
-												<p>198 West 21th Street, Suite 721 New York NY 10016</p>
+												<p>Delhi India</p>
 											</div>
 										</div>
 
@@ -67,7 +67,7 @@ export const Contact = () => {
 												<i className="fa fa-graduation-cap"></i>
 											</div>
 											<div className="colorlib-text">
-												<p><a href="tel://">+91 8076263797</a></p>
+												<p><a href="tel://+91 8076263797">+91 8076263797</a></p>
 											</div>
 										</div>
 									</div>
@@ -85,11 +85,12 @@ export const Contact = () => {
 															style={{ marginTop: "15px", borderRadius: "15px" }} />
 													</div>
 													<div className="form-group">
-														<input type="text"
+														<input type="email"
 															className="form-control"
 															placeholder="Email"
 															name='email'
 															value={values.email}
+															onChange={handleChange('email')}
 															style={{ marginTop: "15px", borderRadius: "15px" }} />
 													</div>
 													<div className="form-group">
@@ -98,6 +99,7 @@ export const Contact = () => {
 															placeholder="Subject"
 															name='subject'
 															value={values.subject}
+															onChange={handleChange('subject')}
 															style={{ marginTop: "15px ", borderRadius: "15px" }} />
 													</div>
 													<div className="form-group">
@@ -106,6 +108,7 @@ export const Contact = () => {
 															placeholder="Message"
 															name='message'
 															value={values.message}
+															onChange={handleChange('message')}
 															style={{ marginTop: "15px", borderRadius: "15px" }}>
 														</textarea>
 													</div>

@@ -6,7 +6,7 @@ export const Service = () => {
         <>
 
             <div class='container-fluid mx-auto mt-5 mb-5 col-12' style={{ textAlign: "center" }}>
-                <div class="hd">Why People Believe in Us</div>
+                <div class="hd">Our Serivces </div>
                 <p><small class="text-muted">Always render more and better service than <br />is expected of you, no matter what your ask may be.</small></p>
                 <div class="row" style={{ justifyContent: "space-between", marginRight: "10px", marginLeft: "10px" }}>
                     <div class="card col-md-3 col-12">

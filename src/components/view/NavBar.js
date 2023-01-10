@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import DarkMode from "../darkMode/darkmode";
 import "./NavBar.css";
 
 function NavBar() {
@@ -16,8 +17,12 @@ function NavBar() {
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+           <DarkMode/>
+           </li>
             
             <li className="nav-item">
+             
               <NavLink
                 exact
                 to="/about"
@@ -48,6 +53,17 @@ function NavBar() {
                 onClick={handleClick}
               >
                 Resume
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/project"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Projects
               </NavLink>
             </li>
             <li className="nav-item">
